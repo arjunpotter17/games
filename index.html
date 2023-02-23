@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Games</title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="index.css">
+        <script defer src="./index.js"></script>
+    </head>
+    <body>
+        <header class="header-text" onmouseover="display()" onmouseout="undisplay()">
+            <div class="circle" id="circle1"></div>
+            <div class="circle" id="circle2"></div>
+            <div class="circle" id="circle3"></div>
+            <div class="circle" id="circle4"></div>
+            <div class="circle" id="circle5"></div>
+            <div class="circle" id="circle6"></div>
+            <div class="circle" id="circle7"></div>
+            <div class="circle" id="circle8"></div>
+            <div class="circle" id="circle9"></div>
+            <div class="circle" id="circle10"></div>
+            <div class="circle" id="circle11"></div>
+            <div class="circle" id="circle12"></div>
+            <div class="circle" id="circle13"></div>
+            <div class="circle" id="circle14"></div>
+            <div class="circle" id="circle15"></div>
+            <div class="circle" id="circle16"></div>
+            <div class="circle" id="circle17"></div>
+            <div class="circle" id="circle18"></div>
+            <div class="circle" id="circle19"></div>
+            <div class="circle" id="circle20"></div>
+
+            <p><a href='#gamesection'>Let's Play</a></p>
+        </header>
+
+        
+        <section id="gamesection" class="rest">
+            <main>
+                <div class="games-section">
+                    <div class="game-card" id ='snake-div' onmouseover="visible(this)" onmouseout="invisible(this)">
+                        <p>Snake</p>
+                        <button type ='button' id="snake-div-button">
+                            <a href="./snake/index.html">Play</a>
+                        </button>
+                    </div>
+                    <div class="game-card" id="pong-div" onmouseover="visible(this)" onmouseout="invisible(this)">
+                        <p>Ping Pong</p>
+                        <button type ='button' id="pong-div-button">
+                            <a href="./pong_js/index.html">Play</a>
+                        </button>
+                    </div>
+                    <div class="game-card" id = 'flap-div' onmouseover="visible(this)" onmouseout="invisible(this)">
+                        <p>Flappy Bird</p>
+                        <button type ='button' id="flap-div-button">
+                            <a href="./flappy_bird/index.html">Play</a>
+                        </button>
+                    </div>
+                </div>
+            </main>
+             
+            <footer class="footer-section">
+                <div class="footer-details">
+                    <p>Developed with care</p>
+                    <p>Arjun Mohan</p>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>

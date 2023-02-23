@@ -1,0 +1,238 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0 ;
+    font-family: 'Roboto', sans-serif;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+ html {
+    scroll-behavior: smooth;
+  }
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top:0;
+    left:0;
+    }
+
+.display{
+    display: block;
+}
+
+.header-text{
+    cursor: none;
+    pointer-events: all;
+    display: flex;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.header-text p{
+    text-decoration: none;
+    background:linear-gradient( #051937, #361c49, #671447, #8c1332, #9b3508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:cover;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.header-text a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text p:hover{
+    font-size: 2rem;
+}
+
+.header-text a {
+    text-decoration: none;
+    cursor: none;
+}
+.games-section{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background: transparent;
+}
+
+.game-card{
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2em;
+    gap:1em;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 400px;
+    position: relative;
+    transition: all 2s;
+}
+
+.game-card p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#snake-div{
+    background-image: url('./assets/snake-image.jfif');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+}
+
+#pong-div{
+    background-image: url('./assets/pong-image.png');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 100%;
+}
+
+#flap-div{
+    background-image: url('./assets/flappy-game.jfif');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 100%;
+}
+
+
+.game-card button{
+    display: none;
+    position: absolute;
+    top:70%;
+    padding: 10px 25px;
+    left:130px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+.visible{
+    background-color: black;
+    padding:0.5em 1em;
+    border-radius: 20px;
+    display: block !important;
+}
+
+.footer-section{
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    flex-direction: column;
+}
+
+.footer-details p:first-child{
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.footer-details p:last-child{
+    font-size: 0.9rem;
+}
+
+.rest{
+    background-image: linear-gradient(to bottom, #080808, #331b37, #73174d);
+}
+
+@media screen and (max-width: 950px){
+    .game-card p{
+        font-size: 22px;
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    
+    .header-text a{
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: unset;
+    }
+
+    .games-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-card{
+        margin-bottom: 2.5em;
+    }
+
+    .game-card p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .game-card{
+        width: 300px;
+    }
+
+    .game-card button{
+        left: unset;
+        margin: auto;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .game-card{
+        width: 200px;
+        height:250px;
+    }
+
+    .game-card p{
+        font-size: 12px;
+    }
+
+    .game-card button a{
+        font-size: 10px;
+    }
+
+
+    .game-card button{
+        left: unset;
+        top: 150px;
+        margin: auto;
+        padding: 10px 12px;
+    }
+}
+
