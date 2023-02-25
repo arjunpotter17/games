@@ -11,6 +11,11 @@
     scroll-behavior: smooth;
   }
 
+
+  body{
+    position: relative;
+  }
+
 .circle{
     width: 20px;
     height: 20px;
@@ -37,7 +42,7 @@
     font-size: 1.5rem;
 }
 
-.header-text p{
+#title{
     text-decoration: none;
     background:linear-gradient( #051937, #361c49, #671447, #8c1332, #9b3508);
     -webkit-background-clip: text;
@@ -51,8 +56,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header-text p:hover{
+#title:hover{
     font-size: 2rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    height:400px;
+    justify-content: space-between;
+}
+
+#caution{
+    color:grey;
+    font-size: 12px;
 }
 
 .header-text a {
@@ -145,6 +164,7 @@ button:hover{
     align-items: flex-end;
     justify-content: center;
     color: #fff;
+    position: relative;
 }
 
 .footer-details{
@@ -168,12 +188,45 @@ button:hover{
     background-image: linear-gradient(to bottom, #080808, #331b37, #73174d);
 }
 
+.home-btn-img{
+    margin: auto;
+    object-fit: cover;
+    border: none;
+    border-radius: 50%;
+    width:55px;
+    height:55px;
+}
+
+.header{
+    position: relative;
+}
+.home-btn{
+    position: fixed;
+    bottom: 2rem; 
+    right: 2.75rem; 
+    filter: grayscale(100%); 
+  }
+  
+  .home-btn:hover{
+    filter: grayscale(0%)
+  }
+
+
+
 @media screen and (max-width: 950px){
     .game-card p{
         font-size: 22px;
     
 }
+}
 
+@media screen and (max-width: 768px){
+    .home-btn{
+        right: 1.25rem; 
+      bottom: 4rem; 
+      filter: grayscale(0%); 
+      }
+}
 
 
 @media screen and (max-width: 480px) {
